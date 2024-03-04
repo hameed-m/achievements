@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPython, FaJava, FaNodeJs, FaReact, FaAws } from "react-icons/fa";
+import { FaPython, FaJava, FaNodeJs, FaReact, FaAws, FaVuejs } from "react-icons/fa";
 import { TbBrandDjango, TbBrandFlutter } from "react-icons/tb";
 
 const Intro = () => {
@@ -16,10 +16,11 @@ const Intro = () => {
         <p className="skills items-center mt-4 text-gray-600">
           <b>Skilled in:</b>
           <br/><FaPython className="inline-block text-2xl text-blue-500" /> Python
-          <br/><TbBrandFlutter className="inline-block text-2xl text-blue-500" /> Flutter
           <br/><FaJava className="inline-block text-2xl text-red-500" /> Java
+          <br/><TbBrandFlutter className="inline-block text-2xl text-blue-500" /> Flutter
           <br/><TbBrandDjango className="inline-block text-2xl text-green-700" /> Django
-          <br/><FaAws  className="inline-block text-2xl text-yellow-700" /> AWS
+          <br/><FaAws className="inline-block text-2xl text-yellow-700" /> AWS
+          <br/><FaVuejs className="inline-block text-2xl text-green-600" /> Vue.js
           <br/><FaNodeJs className="inline-block text-2xl text-green-500" /><FaReact className="inline-block ml-2 text-2xl text-blue-300" /> MERN
         </p>
       </div>
