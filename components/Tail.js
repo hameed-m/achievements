@@ -8,7 +8,7 @@ import {
 
 const Tail = () => {
   return (
-    <div className="contact-section bg-gray-100 p-10 rounded-lg shadow-md">
+    <div className="contact-section bg-gray-100 p-5 rounded-lg shadow-md">
       <div className="text-content">
         <h1 className="text-4xl font-bold text-blue-600">
           Contact Information

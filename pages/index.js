@@ -17,14 +17,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Abdulhamid</title>
+        <title>{"Abdulhamid's achievements"}</title>
       </Head>
       <main
-        className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-        style={{ backgroundColor: "#d4d4d4" }}
+        className={`flex min-h-screen flex-col items-center justify-between p-8 ${inter.className}`}
       >
-        <Intro />
-        <div style={{ height: "100vh" }}>
+        <div>
+          <Intro />
           <VerticalTimeline>
             {achievements.map((achievement, index) => {
               return (
@@ -39,16 +38,21 @@ export default function Home() {
                     borderRight: "7px solid  white",
                   }}
                   date={achievement.date}
-                  iconStyle={{ background: achievement.backgroundColor, color: "#fff" }}
+                  iconStyle={{
+                    background: achievement.backgroundColor,
+                    color: "#fff",
+                  }}
                   icon={achievement.icon}
                 >
                   <h1 className="vertical-timeline-element-title">
-                    {achievement.cardTitle}
+                    <b>{achievement.cardTitle}</b>
                   </h1>
                   <p className="vertical-timeline-element-subtitle">
+                    <b>Description: </b>
                     {achievement.cardSubtitle}
                   </p>
                   <p>
+                    <b>Contribution: </b>
                     {achievement.cardDetailedText}
                   </p>
                 </VerticalTimelineElement>
